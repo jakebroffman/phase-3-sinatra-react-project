@@ -7,6 +7,12 @@ class ApplicationController < Sinatra::Base
     aisles.to_json(include: :products)
   end
 
+  delete '/aisles/:id' do
+    aisle = Aisle.find(params[:id])
+    aisle.destroy
+    aisle.to_json
+  end
+
   delete '/products/:id' do
     products = Product.find(params[:id])
     products.destroy
@@ -17,7 +23,7 @@ class ApplicationController < Sinatra::Base
     product = Product.create(
       name: params[:name],
       price: params[:price],
-      aisle_id: params{:aisle_id}
+      aisle_id: params[:aisle_id]
     )
     product.to_json
   end
