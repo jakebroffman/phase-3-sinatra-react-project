@@ -28,4 +28,12 @@ class ApplicationController < Sinatra::Base
     product.to_json
   end
 
+  post '/aisles' do 
+    aisle = Aisle.create(
+      aisle_number: params[:aisle_number]
+      aisle_category: params[:aisle_category]
+    )
+    aisle.to_json
+  end
+
 end
