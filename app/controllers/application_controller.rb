@@ -36,4 +36,13 @@ class ApplicationController < Sinatra::Base
     aisle.to_json
   end
 
+  patch '/products/:id' do
+    product = Product.find(params[:id])
+    product.update(
+      name: params[:score],
+      price: params[:comment]
+    )
+    product.to_json
+  end
+
 end
