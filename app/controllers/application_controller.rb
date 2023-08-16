@@ -30,7 +30,7 @@ class ApplicationController < Sinatra::Base
 
   post '/aisles' do 
     aisle = Aisle.create(
-      aisle_number: params[:aisle_number]
+      aisle_number: params[:aisle_number],
       aisle_category: params[:aisle_category]
     )
     aisle.to_json
@@ -39,8 +39,8 @@ class ApplicationController < Sinatra::Base
   patch '/products/:id' do
     product = Product.find(params[:id])
     product.update(
-      name: params[:score],
-      price: params[:comment]
+      name: params[:name],
+      price: params[:price]
     )
     product.to_json
   end
