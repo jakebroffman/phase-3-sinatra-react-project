@@ -41,7 +41,7 @@ Your Ruby backend is now set up with a database and populated with dummy data. T
 
 To demonstrate how to integrate this Ruby backend with a React frontend, you can refer to the example React app available at [https://github.com/jakebroffman/Phase-3-Sinatra-React-Project-2](https://github.com/jakebroffman/Phase-3-Sinatra-React-Project-2). This example project provides a practical implementation of how to connect your Ruby backend to a dynamic React frontend.
 
-Configure your frontend to make API requests to the backend using HTTP requests (e.g., Axios or Fetch). Ensure that the endpoints in your frontend match the routes you define in your Ruby application.
+Configure your frontend to make API requests to the backend using HTTP requests (e.g., Axios or Fetch). Ensure that the endpoints in your frontend match the routes defined in the Ruby application.
 
 ## Additional Configuration
 
