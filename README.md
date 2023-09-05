@@ -23,13 +23,13 @@ Before getting started, make sure you have the following requirements installed:
 
 ### Aisles
 
-- aisle_number (string): The aisle number.
-- aisle_category (string): The aisle category.
+- aisle_number (integer): The aisle number.
+- aisle_category (integer): The aisle category.
 
 ### Products
 
 - name (string): The name of the product.
-- price (decimal): The price of the product.
+- price (integer): The price of the product.
 - aisle_id (integer): The ID of the aisle the product is located in.
 - created_at (timestamp): The timestamp when the product was created.
 
